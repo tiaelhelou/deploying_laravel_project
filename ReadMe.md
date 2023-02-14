@@ -8,9 +8,14 @@
 --------------------------------------------------------------------------------------------------------------------------------
 
 ### CheckPoint 1: Connecting to Server and Installing apache, php, mysql and mods
-- Instal: 
-        
+- Install:
+
+  - Update
+  
         sudo apt-get update 
+        
+  - Install
+  
         sudo apt-get install apache2 mysql-server php-mysql php libapache2-mod-php php-mcrypt php-pear curl php-curl php-cli git
 
 - Activate mod_rewrite:
@@ -73,3 +78,52 @@
         sudo php artisan key:generate
         
 -------------------------------------------------------------------------------------------------------------------------------
+
+### CheckPoint 5: Configure Apache
+
+- Check If apache2 Is Installed:
+
+        which apache2
+        
+- Go To apache2 Directory:
+
+        cd /etc/apache2
+        
+- List All Files:
+
+        ls
+        
+- Add Lines to apache2.conf:
+    
+  - Enter File
+
+        vim apache2.conf
+       
+  - Lines
+ 
+        <Directory /var/www/html/stunning-laravel/public>
+        Options Indexes FollowSymLinks
+        AllowOverride all
+        Require all granted
+        </Directory>
+        
+- Go To The “sites-enabled” Folder:
+
+         cd sites-enabled
+         
+- Add Lines to “000-default.conf" After “<VirtualHost *:80>”:
+
+  - Enter File
+
+        vim 000-default.conf
+       
+  - Lines
+ 
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html/stunning-laravel/public/
+        
+- Restart apache2:
+
+        sudo restart apache2
+       
+--------------------------------------------------------------------------------------------------------------------------
