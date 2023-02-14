@@ -37,3 +37,20 @@
         git clone https://github.com/tiaelhelou/stunning-laravel.git
         
 ----------------------------------------------------------------------------------------------------------------------------------    
+
+### CheckPoint 3: Install & Run composer
+
+- Command Does Not Work: 
+
+        curl -sS https://getcomposer.org/installer | sudo php — — installdir=/usr/local/bin — filename=composer
+        
+- Correct Command: 
+
+        curl -sS https://getcomposer.org/installer  | sudo php --  --install-dir=/usr/local/bin --filename=composer
+
+- Install Composer:
+
+        sudo apt-get composer install
+        
+---------------------------------------------------------------------------------------------------------------------------------
+
