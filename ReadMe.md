@@ -54,3 +54,22 @@
         
 ---------------------------------------------------------------------------------------------------------------------------------
 
+### CheckPoint 4: Create .env file & generating app key
+
+- Check Directory;
+
+        pwd
+        
+- Create A Copy Of  .env.example as .env:
+
+        cp .env.example. .env
+        
+- Edit .env and change the APP_NAME value to “Scripting Project”:
+
+        vim .env
+        
+- Generate key:
+
+        sudo php artisan key:generate
+        
+-------------------------------------------------------------------------------------------------------------------------------
