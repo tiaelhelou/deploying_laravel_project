@@ -5,7 +5,7 @@
 - **apt-get:** provides a simple way to install packages from the command line.
 
 
-------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 
 ### CheckPoint 1: Connecting to Server and Installing apache, php, mysql and mods
 - Instal: 
@@ -20,5 +20,20 @@
 - Restart apache2:
 
         sudo restart apache2
+        
+-----------------------------------------------------------------------------------------------------------------------------------
 
+### CheckPoint 2: Getting the project from your repository
+- Change Directory:
 
+        cd var\www\html 
+        
+- Check Directory;
+
+        pwd
+     
+- Clone Repository:
+
+        git clone https://github.com/tiaelhelou/stunning-laravel.git
+        
+----------------------------------------------------------------------------------------------------------------------------------    
