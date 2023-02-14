@@ -1,4 +1,4 @@
-# Project - Laravel Deploy
+# Deploying a Laravel Website
 -----------------------------
 
 - **sudo:** allows you to temporarily elevate your current user account to have root privileges.
