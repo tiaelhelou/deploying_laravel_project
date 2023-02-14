@@ -127,3 +127,22 @@
         sudo restart apache2
        
 --------------------------------------------------------------------------------------------------------------------------
+
+### CheckPoint 6: Setting folder rights & Testing website
+
+- Go To Repository Folder:
+
+        cd /var/www/html/stunning-laravel
+        
+- Change The Permissions Group For The Webserver User:
+
+        sudo chgrp -R www-data storage bootstrap/cache
+        
+- Define The Writable And Executable Permission For The Webserver Owner:
+
+        sudo chmod -R ug+rwx storage bootstrap/cache
+        
+-  IP Address:
+
+        ....
+-------------------------------------------------------------------------------------------------------------------------
